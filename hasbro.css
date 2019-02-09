@@ -1,0 +1,176 @@
+.link a
+{
+	color:black;
+	text-decoration:none;
+	/*text-align:right;
+	font-weight:bold;*/
+}
+.logo
+{
+	align-items: left;
+}
+.search
+{
+	text-align:right;
+	background-color:#A5BDD3;
+	font-weight:bold;
+	background-color:#A5BDD3;
+	color:#fff;
+	padding:20px;
+}
+.head1
+{
+	font-size:20px;
+}
+html,body,h1,h2,h3,h4,h5,a,div,p
+{
+	padding:0;
+	border:0;
+	margin:0;
+}
+.button
+{
+	width:250px;
+	height:70px;
+	background-color:#E46E1C;
+	color:#fff;
+	font-weight:bold;
+	font-size:40px;
+	margin:auto;
+	display:block;
+	border-radius: 10px;
+}
+.big
+{
+	background-image:url("images/has1.png");
+	width:100%;
+	height:70%;
+	background-repeat:no-repeat;
+}
+.butt
+{
+    width:200px;
+    height:50px;
+    background-color:#fff;
+    margin:auto;
+    display:block;
+    border:2px solid blue;
+    border-radius: 10px;
+}
+h3
+{
+	font-size: 30px;
+	font-weight: bold;
+	color:blue;
+	text-decoration: underline;
+}
+.img3
+{
+	margin:30px 0 10px 30px;
+	padding:5px;
+	box-shadow:-10px 10px 3px grey;
+}
+.img2
+{
+	margin: 30px 0 10px 30px;
+	padding:5px;
+	box-shadow:-10px 10px 3px grey;
+}
+.img0
+{
+	margin-left:5px;
+	margin-top: 10px;
+	margin-right: 5px;
+}
+.img1
+{
+	margin-top: 10px;
+}
+body
+{
+	font-family: monospace;
+}
+.li1
+{
+	margin-left:5px;
+	margin-top:10px;
+	margin-right: 5px;
+	font-size: 16px;
+}
+.li2
+{
+	margin-left: 5px;
+	margin-top: 10px;
+	margin-right: 5px;
+	font-size: 16px;
+}
+.nav
+{
+	background-color: #fff;
+	text-align: right;
+	height: 30px;
+	text-align:right;
+	font-weight:bold;
+}
+.feapro
+{
+	margin:auto;
+	text-align: center;
+}
+.feature
+{
+	margin-left: 500px;
+}
+/*.taboo
+{
+	margin-left: 30px;
+}*/
+.brand
+{
+	margin-left:250px;
+}
+/*.tabrow
+{
+	margin-top: -100px;
+}*/
+.foottop
+{
+	width:100%;
+	height: 70px;
+	border: 1px solid grey;
+	background-color: 423F3D;
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+}
+.footbody
+{
+	width: 100%;
+	height:210px;
+	background-color:D2D5E3; 
+	text-align: center;
+}
+.footele1
+{
+	border-bottom: 1px solid grey;
+	height:80px;
+}
+.eng
+{
+	margin-top: 20px;
+}
+.www
+{
+	margin-top: 60px;
+	color: black;
+	font-size: 12px;
+	font-weight: bold;
+}
+.footlogo
+{
+	margin: 35px 0 0 35px;
+}
+.headlogo
+{
+	margin: 15px 0 0 35px;
+}
