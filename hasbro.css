@@ -1,9 +1,8 @@
 .link a
 {
-	color:black;
+	color:#29292A;
 	text-decoration:none;
-	/*text-align:right;
-	font-weight:bold;*/
+    padding-top: 2px;
 }
 .logo
 {
@@ -11,16 +10,20 @@
 }
 .search
 {
-	text-align:right;
 	background-color:#A5BDD3;
 	font-weight:bold;
 	background-color:#A5BDD3;
-	color:#fff;
+	color:#29292A;
 	padding:20px;
+	text-align: center;
 }
 .head1
 {
 	font-size:20px;
+	display: inline;
+	text-align: center;
+	padding-left: 2em;
+	cursor: pointer;
 }
 html,body,h1,h2,h3,h4,h5,a,div,p
 {
@@ -56,6 +59,7 @@ html,body,h1,h2,h3,h4,h5,a,div,p
     display:block;
     border:2px solid blue;
     border-radius: 10px;
+    cursor: pointer;
 }
 h3
 {
@@ -68,13 +72,13 @@ h3
 {
 	margin:30px 0 10px 30px;
 	padding:5px;
-	box-shadow:-10px 10px 3px grey;
+	box-shadow:-10px 10px 3px #DDDEE9;
 }
 .img2
 {
 	margin: 30px 0 10px 30px;
 	padding:5px;
-	box-shadow:-10px 10px 3px grey;
+	box-shadow:-10px 10px 3px #DDDEE9;
 }
 .img0
 {
@@ -88,7 +92,7 @@ h3
 }
 body
 {
-	font-family: monospace;
+	font-family: proxima-nova,sans-serif;
 }
 .li1
 {
@@ -173,4 +177,216 @@ body
 .headlogo
 {
 	margin: 15px 0 0 35px;
+}
+/*.age1
+{
+  width: 140px;
+  height: 140px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin:0 6px;
+  text-transform: capitalize;
+  cursor: pointer;
+}*/
+.row4
+{
+	display: block;
+	box-sizing: border-box;
+}
+.row4 .agelist
+{
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+    justify-content: center;
+    width:90%;
+    margin:0 auto;
+}
+.age 
+{
+    font-size: 45px;
+}
+.agespan
+{
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+}
+.row4 .agelist .age1
+{
+	width: 180px;
+	height: 180px;
+	border:1px solid pink;
+	border-radius: 8px;
+	display: inline-flex;
+	text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 6px;
+    text-transform: capitalize;
+    cursor: pointer;
+    box-sizing: border-box;
+    color: #007ac7;
+    border: 2px solid #007ac7;
+    margin-top: 25px;
+}
+.row4 .agelist .age1:hover
+{
+	background-color: #007ac7;
+	color: #fff;
+}
+/*.row4 .agelist .age2
+{
+	width: 180px;
+	height: 180px;
+	border:1px solid pink;
+	border-radius: 8px;
+	display: inline-flex;
+	text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 6px;
+    text-transform: capitalize;
+    cursor: pointer;
+    box-sizing: border-box;
+}*/
+.row4 .agelist .age2
+{
+	width: 180px;
+	height: 180px;
+	border:1px solid pink;
+	border-radius: 8px;
+	display: inline-flex;
+	text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 6px;
+    text-transform: capitalize;
+    cursor: pointer;
+    box-sizing: border-box;
+    color: #97d602;
+    border: 2px solid #97d602;
+    margin-bottom: 25px;
+}
+.row4 .agelist .age2:hover
+{
+	background-color: #97d602;
+	color: #fff;
+}
+.row4 .agelist .age3
+{
+	width: 180px;
+	height: 180px;
+	border:1px solid pink;
+	border-radius: 8px;
+	display: inline-flex;
+	text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 6px;
+    text-transform: capitalize;
+    cursor: pointer;
+    box-sizing: border-box;
+    color: #af1583;
+    border: 2px solid #af1583;
+    margin-top: 25px;
+}
+.row4 .agelist .age3:hover
+{
+	background-color: #af1583;
+	color: #fff;
+}
+.row4 .agelist .age4
+{
+	width: 180px;
+	height: 180px;
+	border:1px solid pink;
+	border-radius: 8px;
+	display: inline-flex;
+	text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 6px;
+    text-transform: capitalize;
+    cursor: pointer;
+    box-sizing: border-box;
+    color: #ef850f;
+    border: 2px solid #ef850f;
+    margin-bottom: 25px;
+}
+.row4 .agelist .age4:hover
+{
+	background-color: #ef850f;
+	color: #fff;
+}
+.row4 .agelist .age5
+{
+	width: 180px;
+	height: 180px;
+	border:1px solid pink;
+	border-radius: 8px;
+	display: inline-flex;
+	text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 6px;
+    text-transform: capitalize;
+    cursor: pointer;
+    box-sizing: border-box;
+    color: #007ac7;
+    border: 2px solid #007ac7;
+    margin-top: 25px;
+}
+.row4 .agelist .age5:hover
+{
+	background-color: #007ac7;
+	color: #fff;
+}
+.row4 .agelist .age6
+{
+	width: 180px;
+	height: 180px;
+	border:1px solid pink;
+	border-radius: 8px;
+	display: inline-flex;
+	text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 6px;
+    text-transform: capitalize;
+    cursor: pointer;
+    box-sizing: border-box;
+    color: #97d602;
+    border: 2px solid #97d602;
+    margin-bottom: 25px;
+}
+.row4 .agelist .age6:hover
+{
+	background-color: #97d602;
+	color: #fff;
+}
+.row4 .agelist .age7
+{
+	width: 180px;
+	height: 180px;
+	border:1px solid pink;
+	border-radius: 8px;
+	display: inline-flex;
+	text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 6px;
+    text-transform: capitalize;
+    cursor: pointer;
+    box-sizing: border-box;
+    color: #af1583;
+    border: 2px solid #af1583;
+    margin-top: 25px;
+}
+.row4 .agelist .age7:hover
+{
+	background-color: #af1583;
+	color: #fff;
 }
