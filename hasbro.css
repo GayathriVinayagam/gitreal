@@ -84,12 +84,6 @@
   position: relative;
   background-size: cover;
 }
-/*{
-	background-image:url("images/has1.png");
-	width:100%;
-	height:70%;
-	background-repeat:no-repeat;
-}*/
 /* SECTION 2 STYLES */
 .litponyimg0
 {
@@ -179,7 +173,7 @@
 	align-items: center;
 	box-sizing: border-box;
 }
-/* SECTION 4 STYLES */
+/* SECTION 5 STYLES */
 .row4
 {
 	display: block;
@@ -365,7 +359,7 @@
 	background-color: #af1583;
 	color: #fff;
 }
-/*SECTION 5*/
+/* FOOTER */
 .foottop
 {
 	width:100%;
