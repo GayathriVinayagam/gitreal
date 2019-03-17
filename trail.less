@@ -1,0 +1,296 @@
+//variables
+
+@width : 10px;
+@height : @width+10px;
+#header
+{
+	width : @width;
+	height : @height;
+}
+
+//selectors
+
+@selector : banner;
+.@{selector}
+{
+	font-weight:bold;
+	line-height:40px;
+	margin: 0 auto;
+}
+
+//URLs
+
+@images:"https://google.com";
+body
+{
+	background:url("@{images}/img.png");
+}
+
+//properties
+
+@property:color;
+.widget
+{
+	@{property}:#000;
+	background-@{property}:#fff;
+}
+
+//Variable variables
+
+@primery:green;
+@secondary:blue;
+.section
+{
+	@color:primery;
+	.element
+	{
+	    color:@@color;
+	}
+}
+
+//Lazy Evalution
+
+.lazy-eval
+{
+	width:@val;
+	@a:9%;
+}
+@val:@a;
+@a:100%;
+
+
+/*.header
+{
+	--color:white;
+	color:var(--color);
+	--color:black;
+}*/
+
+
+//Properties as variables
+
+.widget
+{
+	color:#efefef;
+	background-color:$color;
+}
+
+.block
+{
+	color:red;
+	.inner
+	{
+	  background-color:$color;
+	}
+	color:blue;
+}
+
+
+//Parent selectors
+
+a{
+	color:blue;
+	&:hover
+	{
+	color:darken(red,10%);
+	}
+}
+
+
+//Nesting
+
+#header
+{
+    color:black;
+	.nav
+	{
+	  font-size:4px;
+	}
+	.logo
+	{
+	  width:300px;
+	}
+}
+
+//Mixin properties from exsiting style
+
+#a,.b
+{
+	color:red;
+}
+.mix-class
+{
+	.b();
+}
+.mix-id
+{
+	#a();
+}
+
+//To hide the mixins
+
+.show-mixin
+{
+	color:red;
+}
+.hide-mixin()
+{
+	background-color:#fff;
+}
+.hide
+{
+	.show-mixin();
+	.hide-mixin();
+}
+
+
+//Selectors in mixins
+
+.my-hover-mixin()
+{
+	&:hover
+	{
+	  color:#123;
+	}
+}
+.button
+{
+	.my-hover-mixin();
+}
+
+//Namespace
+
+#output()
+{
+	.inner
+	{
+	 color:red;
+	}
+}
+.c
+{
+	#output > .inner();
+}
+
+
+//Guarded Namespace
+
+/*#namespace when (@mode=hude)
+{
+	.mixin();
+}
+#namespace 
+{
+	.min() when (@mode=hude)
+}
+@mode=hude;*/
+
+
+//The important keyword
+
+.foo(@bg:#efef;@color:#099)
+{
+	background:@bg;
+	color:@color;
+}
+.unimportant
+{
+	.foo();
+}
+.important
+{
+	.foo() !important;
+}
+
+
+//Parametrix mixins
+
+.border-radius1(@radius:6px)
+{
+	-webkit-border-radius:@radius;
+	-moz-border-radius:@radius;
+	border-radius:@radius;
+}
+.button
+{
+	.border-radius1();
+}
+#header
+{
+	.border-radius1(5px);
+}
+
+//mixin with multiple parameters
+
+/*.mixin1(@color)
+{
+	color-1:@color;
+}
+.mixin1(@color;@padding:2px)
+{
+	color-2:@color;
+	padding-2:@padding;
+}
+.mixin1(@color:#455;@margin;@padding:2)
+{
+	color-3:@color;
+	margin-3:@margin;
+	padding-3:@padding;
+}
+.some .selector
+{
+	.mixin(#008000);
+}*/
+
+//Named parameters
+
+.mixin(@color:black;@margin:2px;@padding:2px)
+{
+	color:@color;
+	margin:@margin;
+	padding:@padding;
+}
+.class1
+{
+	.mixin(@margin:20px;@color:#33acfe);
+}
+.class2
+{
+	.mixin(#efca44,@padding:40px);
+}
+
+//@argumens
+
+.box-shadow(@x:0;@y:0;@blur:1px;@color:#000)
+{
+	-webkit-box-shadow:@arguments;
+	-moz-box-shadow:@arguments;
+	box-shadow:@arguments;
+}
+.big-block
+{
+	.box-shadow(2px;5px);
+}
+
+//using mixin functions
+
+/*.average(@x,@y)
+{
+	@result:((@x+@y)/2);
+}
+div
+{
+	padding:average(16px,50px)[@result];
+}*/
+
+//Extends
+
+nav ul
+{
+	&:extend(.inline);
+	background:blue;
+}
+.inline
+{
+	color:red;
+}
