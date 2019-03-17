@@ -1,0 +1,101 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+div,
+p {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+body {
+  font-family: proxima-nova, sans-serif;
+}
+@media screen and (min-width: 480px) {
+  .limargintopleft,
+  .li1,
+  .li2 {
+    margin-left: 5px;
+    margin-top: 10px;
+  }
+  .lifontsizewight,
+  .li1,
+  .li2 {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .nav {
+    background-color: #fff;
+    text-align: right;
+  }
+  .headlogo {
+    margin: 15px 0 0 35px;
+    width: 100px;
+    height: 100px;
+  }
+  .link {
+    height: 40px;
+    padding-top: 10px;
+  }
+  .link a {
+    color: #29292A;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+  .li1 {
+    margin-right: 5px;
+  }
+  .li2 {
+    margin-right: 20px;
+  }
+  .li3 {
+    margin-right: 35px;
+    margin-left: 5px;
+    margin-top: 10px;
+  }
+  .feildset {
+    padding: 0 25px 0 7px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 600;
+    width: 220px;
+    height: 30px;
+    font-style: italic;
+    color: #cfcfcf;
+    display: inline-box;
+    border: 1px solid #e5eaee;
+    border-radius: 5px;
+    margin-right: 50px;
+  }
+  .search-btn {
+    background: url("/home/gayathri/less1/images/search1.png") no-repeat;
+    background-size: 16px 16px;
+    width: 16px;
+    height: 16px;
+    border: none;
+    position: absolute;
+    top: 2.5%;
+    right: 281px;
+    cursor: pointer;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .search {
+    display: none;
+  }
+  .link {
+    display: none;
+  }
+  .nav {
+    display: block;
+  }
+  .headlogo {
+    margin: 15px 0 0 35px;
+    width: 200px;
+    height: 200px;
+  }
+}
