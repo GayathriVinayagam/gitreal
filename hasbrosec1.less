@@ -1,0 +1,88 @@
+//Section1 styles
+//variables
+
+@font-weight:700;
+@font-size:36px;
+@button-border-radius:7px;
+@btn-txt-color:#fff;
+@btn-bg-color:#E46E1C;
+@btn-padding:0 30;
+
+@banner-height:33.5vw;
+@width:100%;
+
+html,body,h1,h2,h3,h4,h5,a,div,p
+{
+	padding:0;
+	border:0;
+	margin:0;
+}
+
+//styles for desktop and tab
+
+@media screen and (min-width: 480px)
+{
+.button
+{
+	padding:@btn-padding;
+	background-color:@btn-bg-color;
+	color:@btn-txt-color;
+	font-weight:@font-weight;
+	font-size:@font-size;
+	border-radius: @button-border-radius;
+	position: absolute;
+	top :45%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	box-sizing: content-box;
+}
+.banner
+{
+	background-repeat:no-repeat;
+	box-sizing: border-box;
+	height: @banner-height;
+    background-position: 0 50%;
+    position: relative;
+    background-size: cover;
+    display: block;
+    width: @width;
+    background-position:0 50%;
+}
+
+}
+
+//styles for mobile view
+
+@media only screen
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+{
+	.banner
+	{
+		background-repeat:no-repeat;
+		width:@width*2;
+		height:@banner-height+64;
+	}
+	.big
+	{
+		overflow-x:hidden;
+		background-size:cover;
+		position:relative;
+		box-sizing:border-box;
+		background-position: -20vw 0;
+		width:@width;
+	}
+	.button
+	{
+		padding:@btn-padding;
+		background-color:@btn-bg-color;
+		color:@btn-txt-color;
+		font-weight:@font-weight;
+		font-size:@font-size+32;
+		border-radius: @button-border-radius;
+		position: absolute;
+		top :50%;
+		left: 50%;
+	}
+}
