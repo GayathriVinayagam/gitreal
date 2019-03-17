@@ -1,0 +1,14 @@
+.search {
+  font-weight: 600;
+  background-color: #e3ebee;
+  color: #29292A;
+  padding: 20px;
+  text-align: center;
+}
+.head1 {
+  font-size: 20px;
+  display: inline;
+  text-align: center;
+  padding-left: 2em;
+  cursor: pointer;
+}
