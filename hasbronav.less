@@ -1,0 +1,145 @@
+@import (reference) "hasbrosec1.less";
+//Navigation bar
+//variables
+
+@bg-color:#fff;
+@logo-width-height:100px;
+@logo-margin:15px 0 0 35px;
+
+@nav-bar-height:40px;
+@nav-bar-padding:10px;
+
+@link-color:#29292A;
+@link-margin:10px;
+
+@li-margin-left:5px;
+@li-margin-top:10px;
+@li-font-size:16px;
+@li-font-wight:600;
+
+@fieldset-padding:0 25px 0 7px;
+@fieldset-width:220px;
+@fieldset-height:30px;
+@fieldset-fontstyle:italic;
+@fieldset-color:#cfcfcf;
+@fieldset-border:1px solid #e5eaee;
+@fieldset-border-radius:5px;
+
+@img:"/home/gayathri/less1/images";
+@search-width-height:16px;
+
+html,body,h1,h2,h3,h4,h5,a,div,p
+{
+	padding:0;
+	border:0;
+	margin:0;
+}
+body
+{
+	font-family: proxima-nova,sans-serif;
+}
+
+
+//styles for desktop and tab view
+
+@media screen and (min-width: 480px)
+{
+.limargintopleft
+{
+	margin-left:@li-margin-left;
+	margin-top:@li-margin-top;
+}
+.lifontsizewight
+{
+	font-size:@li-font-size;
+	font-weight:@li-font-wight;
+}
+.nav
+{
+	background-color: @bg-color;
+	text-align: right;	
+}
+.headlogo
+{
+	margin: @logo-margin;
+	width: @logo-width-height;
+	height: @logo-width-height;
+}
+.link
+{
+	height: @nav-bar-height;
+	padding-top: @nav-bar-padding;
+	a
+	{
+		color:@link-color;
+   		text-decoration:none;
+   		margin-top: @link-margin;
+	}
+}
+.li1:extend(.limargintopleft, .lifontsizewight)
+{
+	margin-right:5px;
+}
+.li2:extend(.limargintopleft, .lifontsizewight)
+{
+	margin-right:20px;
+}
+.li3
+{
+	margin-right: 35px;
+	.limargintopleft();
+}
+.feildset
+{
+	padding:@fieldset-padding;
+	box-sizing:border-box;
+	.lifontsizewight();
+	width:@fieldset-width;
+	height:@fieldset-height;
+	font-style:@fieldset-fontstyle;
+	color:@fieldset-color;
+	display:inline-box;
+	border:1px solid #e5eaee;
+	border-radius:@fieldset-border-radius;
+	margin-right:50px;
+}
+.search-btn
+{
+	background:url("@{img}/search1.png") no-repeat;
+	background-size:16px 16px;
+	width: @search-width-height;
+	height: @search-width-height;
+	border: none;
+	position: absolute;
+	top: 2.5%;
+	right: 281px;
+	cursor: pointer;
+}
+}
+
+//styles for mobile view
+
+@media only screen
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+{
+  .search
+  {
+		display: none;
+  }
+  .link
+  {
+		display: none;
+  }
+  .nav
+  {
+  	display:block;
+  }	
+  .headlogo
+  {
+	margin: @logo-margin;
+	width: @logo-width-height+100;
+	height: @logo-width-height+100;
+  }
+}
