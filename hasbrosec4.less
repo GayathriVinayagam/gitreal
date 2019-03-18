@@ -1,0 +1,110 @@
+@import (reference) "hasbronav.less";
+@import (reference) "hasbrosrch.less";
+@import (reference) "hasbrosec1.less";
+@import (reference) "hasbrosec2.less";
+
+
+//styles for desktop and tab view
+
+@media screen and (min-width: 480px)
+{
+.brandstyles
+{
+	box-sizing:border-box;
+	align-items:center;
+	justify-content:center;
+}
+.head
+{
+	text-align:center;
+	font-size:@font-size;
+	font-weight:@font-weight;
+	color:#007ac7;
+}
+.row3
+{
+	margin-top:70px;
+}
+.brand:extend(.brandstyles)
+{
+	margin:0 auto 50px;
+	width:@width+(-25);
+	display: flex;
+	flex-wrap: wrap;
+	cursor: pointer;
+}
+.brandimg:extend(.brandstyles)
+{
+	width:85%;
+	height: 16%;
+	margin:0 5% 3% 5%;
+}
+.brand1img:extend(.brandstyles)
+{
+	width:80%;
+	height: 4%;
+	margin:0 5% 3% 5%;
+}
+.brandhead
+{
+	&:extend(.head);
+}
+.brandlogo
+{
+	margin:0 20px 0 20px;
+}
+}
+
+//styles for mobile view
+
+@media only screen
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  {
+  	.brandstyles
+	{
+		box-sizing:border-box;
+		align-items:center;
+		justify-content:center;
+	}
+	.head
+	{
+		text-align:center;
+		font-size:@font-size+64;
+		font-weight:@font-weight;
+		color:#007ac7;
+	}
+  	.row3
+	{
+		margin-top:70px;
+	}
+	.brand:extend(.brandstyles)
+	{
+		margin:50px auto 50px;
+		width:@width+(-25);
+		display: flex;
+		flex-wrap: wrap;
+		cursor: pointer;
+	}
+	.brandimg:extend(.brandstyles)
+	{
+		width:85%;
+		height: 9%;
+		margin:0 5% 3% 5%;
+	}
+	.brand1img:extend(.brandstyles)
+	{
+		width:80%;
+		height: 2%;
+		margin:0 5% 3% 5%;
+	}
+	.brandhead
+	{
+		&:extend(.head);
+	}
+	.brandlogo
+	{
+		margin:0 20px 0 20px;
+	}
+  }
