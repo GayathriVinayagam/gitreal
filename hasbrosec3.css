@@ -1,0 +1,39 @@
+@media screen and (min-width: 480px) {
+  .row2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 70px;
+  }
+  .feature {
+    display: inline-flex;
+    margin: 50px 0 0 0;
+  }
+  .feapro {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .featurehead {
+    text-align: center;
+    width: 100%;
+    font-size: 36px;
+    color: #007ac7;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .featurehead {
+    text-align: center;
+    width: 100%;
+    font-size: 100px;
+    color: #007ac7;
+  }
+  .feature {
+    diaplay: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .slide {
+    flex-shrink: 0;
+  }
+}
