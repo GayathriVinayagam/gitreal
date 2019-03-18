@@ -1,0 +1,224 @@
+@media screen and (min-width: 480px) {
+  .ages,
+  .age1,
+  .age2,
+  .age3,
+  .age4,
+  .age5,
+  .age6,
+  .age7 {
+    width: 180px;
+    height: 180px;
+    border-radius: 8px;
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 6px;
+    text-transform: capitalize;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+  .head,
+  .agehead {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: #007ac7;
+  }
+  .row4 {
+    display: block;
+    box-sizing: border-box;
+  }
+  .age {
+    font-size: 45px;
+  }
+  .agespan {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .agelist {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .age1 {
+    color: #007ac7;
+    border: 2px solid #007ac7;
+    margin-top: 25px;
+  }
+  .age1:hover {
+    background-color: #007ac7;
+    color: #fff;
+  }
+  .age2 {
+    color: #97d602;
+    border: 2px solid #97d602;
+    margin-bottom: 25px;
+  }
+  .age2:hover {
+    background-color: #97d602;
+    color: #fff;
+  }
+  .age3 {
+    color: #af1583;
+    border: 2px solid #af1583;
+    margin-top: 25px;
+  }
+  .age3:hover {
+    background-color: #af1583;
+    color: #fff;
+  }
+  .age4 {
+    color: #ef850f;
+    border: 2px solid #ef850f;
+    margin-bottom: 25px;
+  }
+  .age4:hover {
+    background-color: #ef850f;
+    color: #fff;
+  }
+  .age5 {
+    color: #007ac7;
+    border: 2px solid #007ac7;
+    margin-top: 25px;
+  }
+  .age5:hover {
+    background-color: #007ac7;
+    color: #fff;
+  }
+  .age6 {
+    color: #97d602;
+    border: 2px solid #97d602;
+    margin-bottom: 25px;
+  }
+  .age6:hover {
+    background-color: #97d602;
+    color: #fff;
+  }
+  .age7 {
+    color: #af1583;
+    border: 2px solid #af1583;
+    margin-top: 25px;
+  }
+  .age7:hover {
+    background-color: #af1583;
+    color: #fff;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .ages,
+  .age1,
+  .age2,
+  .age3,
+  .age4,
+  .age5,
+  .age6,
+  .age7 {
+    width: 300px;
+    height: 300px;
+    border-radius: 40px;
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 6px;
+    text-transform: capitalize;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+  .head,
+  .agehead {
+    text-align: center;
+    font-size: 100px;
+    font-weight: 700;
+    color: #007ac7;
+  }
+  .row4 {
+    display: block;
+    box-sizing: border-box;
+  }
+  .age {
+    font-size: 80px;
+  }
+  .agespan {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .agelist {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    margin: 50px auto 0;
+  }
+  .age1 {
+    color: #007ac7;
+    border: 10px solid #007ac7;
+    margin-top: 25px;
+  }
+  .age1:hover {
+    background-color: #007ac7;
+    color: #fff;
+  }
+  .age2 {
+    color: #97d602;
+    border: 10px solid #97d602;
+    margin-bottom: 25px;
+  }
+  .age2:hover {
+    background-color: #97d602;
+    color: #fff;
+  }
+  .age3 {
+    color: #af1583;
+    border: 10px solid #af1583;
+    margin-top: 25px;
+  }
+  .age3:hover {
+    background-color: #af1583;
+    color: #fff;
+  }
+  .age4 {
+    color: #ef850f;
+    border: 10px solid #ef850f;
+    margin-bottom: 25px;
+  }
+  .age4:hover {
+    background-color: #ef850f;
+    color: #fff;
+  }
+  .age5 {
+    color: #007ac7;
+    border: 10px solid #007ac7;
+    margin-top: 25px;
+  }
+  .age5:hover {
+    background-color: #007ac7;
+    color: #fff;
+  }
+  .age6 {
+    color: #97d602;
+    border: 10px solid #97d602;
+    margin-bottom: 25px;
+  }
+  .age6:hover {
+    background-color: #97d602;
+    color: #fff;
+  }
+  .age7 {
+    color: #af1583;
+    border: 10px solid #af1583;
+    margin-top: 25px;
+  }
+  .age7:hover {
+    background-color: #af1583;
+    color: #fff;
+  }
+}
