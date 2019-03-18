@@ -1,0 +1,66 @@
+@import (reference) "hasbronav.less";
+@import (reference) "hasbrosrch.less";
+@import (reference) "hasbrosec1.less";
+@import (reference) "hasbrosec2.less";
+
+//section3 styles
+
+//variables
+@feapro-font-size:24px;
+
+
+//styles for desktop and tab view
+
+@media screen and (min-width: 480px)
+{
+.row2
+{
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
+	justify-content:center;
+	flex-wrap:wrap;
+	margin-top:70px;
+}
+.feature
+{
+	display:inline-flex;
+	margin:50px 0 0 0;
+}
+.feapro
+{
+	font-size:@feapro-font-size;
+	font-weight:@font-weight;
+}
+.featurehead
+{
+	text-align:center;
+	width:@width;
+	font-size:@font-size;
+	color:#007ac7;
+}
+}
+
+@media only screen
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+{
+	.featurehead
+	{
+		text-align:center;
+		width:@width;
+		font-size:@font-size+64;
+		color:#007ac7;
+	}
+	.feature
+	{
+		diaplay:flex;
+		overflow-x:auto;
+		-webkit-overflow-scrolling: touch;
+	}
+	.slide
+	{
+		flex-shrink: 0;
+	}
+}
