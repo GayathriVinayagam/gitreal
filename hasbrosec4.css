@@ -1,0 +1,80 @@
+@media screen and (min-width: 480px) {
+  .brandstyles,
+  .brand,
+  .brandimg,
+  .brand1img {
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+  }
+  .head,
+  .brandhead {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: #007ac7;
+  }
+  .row3 {
+    margin-top: 70px;
+  }
+  .brand {
+    margin: 0 auto 50px;
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+  }
+  .brandimg {
+    width: 85%;
+    height: 16%;
+    margin: 0 5% 3% 5%;
+  }
+  .brand1img {
+    width: 80%;
+    height: 4%;
+    margin: 0 5% 3% 5%;
+  }
+  .brandlogo {
+    margin: 0 20px 0 20px;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .brandstyles,
+  .brand,
+  .brandimg,
+  .brand1img {
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+  }
+  .head,
+  .brandhead {
+    text-align: center;
+    font-size: 100px;
+    font-weight: 700;
+    color: #007ac7;
+  }
+  .row3 {
+    margin-top: 70px;
+  }
+  .brand {
+    margin: 50px auto 50px;
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+  }
+  .brandimg {
+    width: 85%;
+    height: 9%;
+    margin: 0 5% 3% 5%;
+  }
+  .brand1img {
+    width: 80%;
+    height: 2%;
+    margin: 0 5% 3% 5%;
+  }
+  .brandlogo {
+    margin: 0 20px 0 20px;
+  }
+}
