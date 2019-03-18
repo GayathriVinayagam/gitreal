@@ -1,0 +1,154 @@
+@import (reference) "hasbronav.less";
+@import (reference) "hasbrosrch.less";
+@import (reference) "hasbrosec1.less";
+@import (reference) "hasbrosec2.less";
+@import (reference) "hasbrosec4.less";
+
+
+//variables
+@foot-logo-margin:100px 0 100px 330px;
+@foot-bg-color:#e5eaee;
+
+//styles for desktop and tab view
+
+@media screen and (min-width: 480px)
+{
+.foottop
+{
+	width:@width;
+	height: 70px;
+	background-color: #423F3D;
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.footlogo
+{
+	margin:@foot-logo-margin;
+}
+.wwww
+{
+	width: @width;
+	border-bottom: 2px solid #c9c6c6;
+	padding: 30px;
+	background-color: @foot-bg-color;
+	text-align: center;
+	justify-content: center;
+	display: flex;
+	font-weight: @font-weight;
+	box-sizing: border-box;
+}
+.www
+{
+	color: black;
+	font-size: 16px;
+	font-weight: @font-weight;
+	text-align: center;
+}
+.footend
+{
+	width:@width;
+	display: inline-flex;
+	flex-direction: row;
+	background-color: @foot-bg-color;
+	padding-bottom: 20px;
+}
+.footend1
+{
+	margin:60px 0 0 75px;
+	color: #737373;
+}
+.eng
+{
+	text-transform:uppercase;
+}
+.worldwide
+{
+	background:url("@{img}/has18.png") 30px 30px no-repeat;
+	width:@search-width-height+14;
+	height:@search-width-height+14;
+	margin-right:25px;
+}
+}
+
+//styles for mobile view
+
+@media only screen
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  {
+  	.foottop
+	{
+	width:@width;
+	height: 200px;
+	background-color: #423F3D;
+	//text-align: center;
+	color: #fff;
+	font-size: 20px;
+	display: inline-flex;
+	flex-direction: row;
+	//justify-content: center;
+	//align-items: center;
+	}
+	.footlogo
+	{
+		margin:@foot-logo-margin;
+		width:250px;
+		height:250px;
+		order:2;
+	}
+	.wwww
+	{
+	width: @width;
+	border-bottom: 2px solid #c9c6c6;
+	padding: 100px;
+	background-color: @foot-bg-color;
+	text-align: center;
+	justify-content: center;
+	display: flex;
+	font-weight: @font-weight;
+	box-sizing: border-box;
+	}
+	.www
+	{
+	color: black;
+	font-size: @font-size+9;
+	font-weight: @font-weight;
+	text-align: center;
+	}
+	.footend
+	{
+	width:@width;
+	display:flex;
+	flex-direction: column;
+	background-color: @foot-bg-color;
+	padding-bottom: 20px;
+	}
+	.footend1
+	{
+	margin:60px 0 0 0;
+	color: #737373;
+	font-size:@font-size+14;
+	width:@width;
+	padding-left:95px;
+	box-sizing:border-box;
+	}
+	.eng
+	{	
+	text-transform:uppercase;
+	font-size:@font-size+14;
+	text-align:left;
+	}
+	.worldwide
+	{
+	background:url("@{img}/has18.png") 30px 30px no-repeat;
+	width:@search-width-height+14;
+	height:@search-width-height+14;
+	margin-right:25px;
+	}
+  }
